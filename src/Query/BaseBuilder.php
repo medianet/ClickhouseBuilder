@@ -2077,11 +2077,13 @@ abstract class BaseBuilder
     }
 
     /**
-     *
+     * @return static
      */
-    public function withTotals(): void
+    public function withTotals()
     {
         $this->totals = true;
+
+        return $this;
     }
 
     /**
